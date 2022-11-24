@@ -1,0 +1,38 @@
+<div id="app"></div>
+<style>
+iframe[src*="datawrapper.dwcdn.net"] + img {
+    display: none;
+}
+
+@media print {
+    iframe[src*="datawrapper.dwcdn.net"] {
+        display: none;
+    }
+    iframe[src*="datawrapper.dwcdn.net"] + img {
+        display: block;
+        width: 100%;
+    }
+}    
+</style>
+
+<b>Nombre:</b> María Rodríguez Ciria <br>
+<b>Url:</b> <a href= "https://js-verh1y.stackblitz.io/"> https://js-verh1y.stackblitz.io </a><br>
+<b>GitHub:</b> <a href= "https://github.com/mrodcir?tab=repositories">https://github.com/mrodcir?tab=repositories/</a><br>
+<b>Google Colab:</b> <a href= "https://colab.research.google.com/drive/1BXUJmpneeXLZQ2HqxlZa8yoY0F8ggAl-?usp=sharing">https://colab.research.google.com/drive/1BXUJmpneeXLZQ2HqxlZa8yoY0F8ggAl-?usp=sharing</a>
+
+
+<h1> Visualización - Trabajo Práctico </h1>
+<h2> 1. Contexto y motivación</h2>
+En este trabajo práctico de Visualización de Datos vamos a trabajar con los datos que se utilizaron en las prácticas de las asignaturas de Minería y Estadística. Por la naturaleza del fichero elegido (alta del Impuesto de Vehículos de Tracción mecánica en el Ayuntamiento de València durante el tercer trimestre de 2021), el interés primordial de su estudio es la descriptiva.
+<h2> 2. Objetivos</h2>
+El objetivo principal del análisis de este fichero es la descriptiva del mismo. El interés radica en estudiar las diferentes características del conjunto de datos para el total de la ciudad, así como para distrito. Se pueden obtener visualizaciones de altas de vehículo según tipo (turismo, motocicleta, ciclomotor, etc.) y un mapa de vehículos por habitante. Estas visualizaciones pueden ser de ayuda a la toma de decisiones para los gestores del Ayuntamiento, a los que va dirigido este informe.
+<h2> 3. Audiencia</h2>
+El estudio de los vehículos en Alta en el Impuesto de vehículos, y, en particular, de los vehículos en alta por adquisición (nuevos) puede ser de interés para los gestores del Ayuntamiento, que pueden tomar decisiones sobre zonas peatonales, párquings o incluso instalaciones de zonas de carga de vehículos eléctricos, para este tipo de vehículos.
+<h2> Google Sheets </h2>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRjRSSzYXfTPxUy5Ue0HJufNU7rmKTbG_jsb4GKLU-f60BUYfcGTYT_uahspeu_sv4gCuEQShiU9R8W/pubchart?oid=1392597339&amp;format=interactive"></iframe>
+Hemos realizado un gráfico de barras de vehículos por tipo, destacando motocicletas y ciclomotores, pues la tendencia en València es de crecimiento de este tipo de vehículos, para que los gestores puedan considerar si crear nuevas plazas de aparcamiento.
+
+<h2> Data Wrapper </h2>
+<iframe title="Turismos nuevos particulares / 1000 hab. Distritos. València. 3r trim. 2021" aria-label="Mapa" id="datawrapper-chart-ieSFs" src="https://datawrapper.dwcdn.net/ieSFs/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="783" data-external="1"></iframe><img src="https://datawrapper.dwcdn.net/ieSFs/full.png"/>;
+</script>
+Hemos realizado un mapa de los distritos de València representando los turismos nuevos (hemos visto en el gráfico de barras que es el tipo de vehículo más numeroso) por 1000 habitantes. Sabemos que la representación de mapas coropléticos tienen alguna desventaja por una incorrecta interpretación, tanto por el cambio de zonas, como por el cambio de zonas. Pese a sus desventajas, nos permite representar la variable de estudio geográficamente, y permite comparaciones y una interpretación visual muy rápida.
